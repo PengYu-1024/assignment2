@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My shop</title>
+    <script src="js/as2.js"></script>
+    <link rel="stylesheet" href="css/as2.css">
+</head>
+
+<body>
+
+<form name="myform" method="Post" onsubmit="return formSubmit();"  action="" >
+		<h2>MY SHOP</h2>
+		<label>NAME*:</label>
+		<input type="text" id="name"  placeholder="Name" name="name"><br/>
+		
+		<label>EMAIL*:</label>
+		<input type="email" id="email" placeholder="EMAIL" name="email" ><br/>
+
+		<label>PHONE*:</label> 
+		<input type="phone" id="phone" placeholder="XXX-XXX-XXXX" name="phone" ><br/>
+
+		<label>ADDRESS*:</label> 
+		<input type="text" id="address" placeholder="ADDRESS" name="" ><br/>
+	
+		<label>CITY*:</label>
+		<input type="text" id="city" placeholder="CITY" name="" ><br/>
+		
+		<label>POST CODE*:</label> 
+		<input type="postcode" id="postcode" placeholder="X9X 9X9" name="postcode" ><br/>
+
+		<label>PROVINCE*:</label> 
+				<select id="province">
+					<option>ONTARIO</option>
+					<option>QC</option>
+					<option>NS</option>
+					<option>NB</option>
+					<option>MB</option>
+					<option>BC</option>
+					<option>PE</option>
+					<option>SK</option>
+					<option>AL</option>
+					<option>NL</option>
+					<option>NT</option>
+					<option>YT</option>
+					<option>NU</option>
+				</select><br/>
+
+		
+		<label>APPLE@1$:</label> 
+		<input type="text" id="apple" placeholder="Enter a number" name=""><br/>
+		
+		<label>BANANA@1$:</label> 
+		<input type="text" id="banana" placeholder="Enter a number" name=""><br/>
+	
+		<label>ORANGE@2$:</label> 
+		<input type="text" id="orange" placeholder="Enter a number" name=""><br/>
+			
+		<label>	DELIVERY TIME:</label>
+				<select id="days">
+					<option>1 DAY</option>
+					<option>2 DAYS</option>
+					<option>3 DAYS</option>
+					<option>4 DAYS</option>
+				</select>
+			
+			<br/><br/>
+	<input type="submit" id="submit" value="PLACE ORDER">
+		<p id="errors"></p>
+</form>
+
+
+<div class="formData">
+	<h2>Receipt</h2>
+    <p id="formResult">This is where the form data will show up.</p>
+  </div>
+
+
+
+</body>
+</html>
